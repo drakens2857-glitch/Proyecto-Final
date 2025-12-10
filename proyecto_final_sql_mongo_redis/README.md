@@ -541,17 +541,12 @@ redis-cli INCR counter:bookings_total
 redis-cli LPUSH queue:notifications "job1"
 ```
 
----
 
-# Checklist de requisitos (cumplimiento)
 
-* [x] Modelo ER y 3FN descrito.
-* [x] Scripts SQL (create/insert) válidos para PostgreSQL.
-* [x] >=6 tablas en SQL (user, customer, employee, branch, service, booking, booking_service, payment).
-* [x] Consultas avanzadas con JOINs, GROUP BY/HAVING, subconsultas, CTEs.
-* [x] >=3 colecciones en MongoDB (profiles, booking_histories, analytics) con inserts y pipelines de Aggregation.
-* [x] Redis: uso de STRING, LIST, HASH, SET, ZSET y TTL; ejemplos de comandos.
-* [x] Caso de uso integrado y documentación justificando la arquitectura.
-* [x] Evidencias: comandos y demo Node.js.
 
----
+
+
+
+
+
+
