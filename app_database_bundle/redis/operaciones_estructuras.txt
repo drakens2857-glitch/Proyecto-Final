@@ -1,0 +1,22 @@
+# STRING: sesiones y tokens
+SET session:user:1 "{\"user_id\":1,\"expires\":\"...\"}" EX 1800
+
+# LIST: cola de turnos
+LPUSH queue:turns "booking:101"
+RPUSH queue:turns "booking:102"
+BRPOP queue:turns 0 -- bloqueo para consumidor
+
+# HASH: configuraciones por sucursal
+HSET branch:1:config open true max_capacity 30 contact "3001112222"
+HGET branch:1:config max_capacity
+
+# SET: usuarios en línea (no duplicados)
+SADD online_users 1
+SADD online_users 2
+
+# ZSET: ranking por puntos o métricas
+ZADD user_points 120 "user:1" 200 "user:3"
+ZRANGE user_points 0 -1 WITHSCORES
+
+# TTL (expiración)
+SET otp:12345 987654 EX 120 -- OTP expira en 120s

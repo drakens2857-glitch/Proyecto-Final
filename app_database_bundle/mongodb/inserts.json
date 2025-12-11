@@ -1,0 +1,16 @@
+[
+  {
+    "_id": {"$oid":"64b1f1a1c2a3e1a1a1a1a1a1"},
+    "user_id": 1,
+    "preferences": {"notifications": true, "language": "es", "favorite_services": ["Cambio de aceite","Alineación"]},
+    "addresses": [{"label":"Casa","address":"Calle 1 #10-20"}],
+    "created_at": {"$date":"2025-12-01T10:00:00Z"}
+  },
+  {
+    "_id": {"$oid":"64b1f1a1c2a3e1a1a1a1a1a2"},
+    "user_id": 3,
+    "preferences": {"notifications": false, "language": "en"},
+    "notes": "Cliente VIP",
+    "created_at": {"$date":"2025-11-28T12:00:00Z"}
+  }
+]
