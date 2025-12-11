@@ -40,17 +40,6 @@ Este proyecto demuestra un sistema de información híbrido que integra PostgreS
 * Docker & Docker Compose
 * Node.js 18+
 
-**Cómo ejecutar:**
-
-1. Clonar el repositorio.
-2. `cd proyecto-final/integracion`
-3. `docker compose up -d`
-4. Esperar que los servicios arranquen.
-5. Cargar SQL: `psql` o usar el script incluido.
-6. Ejecutar `node demo_integration.js` para ver interacción entre motores.
-
----
-
 # /sql/modelo_conceptual.md
 
 Se modela un sistema de **Reservas y Atención al Cliente** para una cadena de servicios (por ejemplo: talleres/centros de atención).
