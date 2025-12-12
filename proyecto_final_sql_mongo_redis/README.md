@@ -448,7 +448,7 @@ async function main(){
   const db = mongo.db('appdb');
 
   // 1) Leer usuario y perfil extendido
-  const res = await pg.query(`SELECT u.user_id, u.name FROM app."user" u LIMIT 1`);
+  const res = await pg.query(`SELECT u.user_id, u.name FROM public."user" u LIMIT 1`);
   console.log('User from PG:', res.rows[0]);
 
   const profile = await db.collection('profiles').findOne({ user_id: res.rows[0].user_id });
