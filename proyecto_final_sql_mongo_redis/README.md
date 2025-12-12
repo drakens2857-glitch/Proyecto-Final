@@ -13,7 +13,7 @@
     insert_data.sql
     queries_avanzadas.sql
   /mongodb/
-    diseño_colecciones.md
+    diseño_colecciones.md+
     inserts.json
     consultas_aggregation.md
   /redis/
@@ -499,6 +499,8 @@ Caso de uso integrado (flujo):
 Justificación técnica: mantener la fuente de verdad transaccional en SQL, usar MongoDB para trazabilidad/documentos anidados y Redis para rendimiento.
 
 ---
+
+# gracias
 
 
 
