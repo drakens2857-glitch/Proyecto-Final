@@ -500,35 +500,6 @@ Justificación técnica: mantener la fuente de verdad transaccional en SQL, usar
 
 ---
 
-# Evidencias y comandos rápidos
-
-1. **Levantar servicios:**
-
-```bash
-cd integracion
-docker compose up -d
-```
-
-2. **Cargar SQL** (ejemplo con psql dentro del contenedor):
-
-```bash
-# copiar archivos al contenedor o ejecutar psql con archivo montado
-docker exec -i $(docker ps -q -f name=postgres) psql -U appuser -d appdb -f /path/to/sql/create_tables.sql
-```
-
-3. **Insertar datos en MongoDB:**
-
-```bash
-# desde host con mongoimport
-mongoimport --db appdb --collection profiles --file ../mongodb/inserts.json --jsonArray
-```
-
-4. **Probar Redis:**
-
-```bash
-redis-cli INCR counter:bookings_total
-redis-cli LPUSH queue:notifications "job1"
-```
 
 
 
